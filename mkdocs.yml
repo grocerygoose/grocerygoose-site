@@ -1,12 +1,14 @@
-site_name: Grocery Gooose Documentation
-site_description: Documentation for the Grocery Gooose application
-repo_url: https://github.com/grocerygoose/grocerygooose-site
-repo_name: grocery-gooose
+site_name: Grocery Goose
+site_url: https://usegrocerygoose.com
+site_description: Documentation for the Grocery Goose application
+# repo_url: https://github.com/grocerygoose/grocerygooose-site
+# repo_name: grocery-gooose
 
 theme:
   name: material
+  logo: assets/grocery-goose.svg
+  favicon: assets/grocery-goose.png
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.top
     - search.suggest
@@ -16,18 +18,8 @@ theme:
     - content.code.copy
   language: en
   palette:
-    - scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-      primary: teal
-      accent: purple
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-      primary: teal
-      accent: lime
+    primary: orange
+    accent: orange
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -39,24 +31,42 @@ markdown_extensions:
       generic: true
   - footnotes
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.mark
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
 plugins:
   - search
   - git-revision-date-localized:
       enable_creation_date: true
+  - mermaid2
 
 nav:
   - Home: index.md
-  - Getting Started:
-    - Installation: getting-started/installation.md
-    - Quick Start: getting-started/quick-start.md
-  - Features:
-    - Meal Planning: features/search.md
-    - Budget Management: features/shopping-cart.md
-  - Help & Support: contributing.md 
+  - About: about/about.md
+  - Roadmap: about/roadmap.md
+  - Contact: contact.md
+
+extra_css:
+  - stylesheets/signup.css
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+extra:
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:support@usegrocerygoose.com
+    # - icon: fontawesome/brands/twitter
+    #   link: https://twitter.com/grocerygoose
+    # - icon: fontawesome/brands/instagram
+    #   link: https://instagram.com/grocerygoose
+  generator: false
