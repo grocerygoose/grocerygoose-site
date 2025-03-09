@@ -1,0 +1,40 @@
+/* Keep existing logo styles */
+.md-logo {
+  padding: 0.4rem;
+  width: 7.5rem !important;
+  height: 7.5rem !important;
+}
+
+.md-logo img {
+  width: 100% !important;
+  height: 100% !important;
+  background: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+/* Make site name orange */
+.md-header__title {
+  color: #FFFFFF !important;  /* Bright orange */
+}
+
+.md-header__topic {
+  color: #FFFFFF !important;
+}
+
+/* Adjust header height for larger logo */
+.md-header {
+  height: 8rem;
+  padding: 0.3rem;
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 76.1875em) {
+  .md-header {
+    height: 7rem;
+  }
+  .md-logo {
+    width: 6rem !important;
+    height: 6rem !important;
+  }
+}

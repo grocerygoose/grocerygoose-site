@@ -1,38 +1,42 @@
-# Grocery Gooose
+# Grocery Gooose Site
 
-## Overview
+Grocery Goose is a site that allows you to learn about the grocery goose app and sign up for the waitlist.
 
-Grocery Gooose makes family meal planning as easy as swiping through TikTok. Pick your meals, we'll handle the shopping.
+## Development
 
-## How It Works
+### Running the site locally
 
-1. **Set Your Preferences** 
-   - Family size
-   - Budget per meal
-   - Dietary needs
-   - Preferred store (Walmart or Instacart)
 
-2. **Swipe Through Meals**
-   - Like dating apps, but for dinner
-   - See full recipes, prep time, and cost
-   - Swipe right to add to your meal plan
-   - Swipe left to skip
+#### Create a virtual environment and install dependencies (3.11.3)
 
-3. **Auto-Magic Shopping**
-   - Ingredients automatically added to your cart
-   - Choose pickup or delivery
-   - One-click checkout with Walmart or Instacart
+```bash
+pyenv virtualenv 3.11.3 grocery-goose-site-3.11.3
+```
 
-## Local Development
+```bash
+pyenv activate grocery-goose-site-3.11.3
+```
 
-Install the required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-Start the documentation server:
 ```bash
 mkdocs serve
 ```
 
-Visit `http://127.0.0.1:8000` to view the documentation.
+Visit `http://127.0.0.1:8000` to view the site.
+
+### Deploying the site
+
+```bash
+mkdocs gh-deploy
+```
+
+This will deploy the site to the `gh-pages` branch.
+
+### Updating the site
+
+```bash
+mkdocs build
+```
