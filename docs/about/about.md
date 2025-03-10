@@ -2,13 +2,11 @@
 
 Order groceries in minutes.
 
-Pick your meals and we'll generate a ready to go grocery order from your favorite store in your area. Have it delivered or pick it up.
-
+Pick your meals, and grocery goose will generate a ready to go grocery order from your favorite store in your area. Have it delivered or pick it up.
 
 ## When do we launch?
 
-Grocery Goose is currently in development. Coming soon to iOS.
-
+Grocery Goose is currently in development. Coming soon to iPhone.
 
 ## Key Features
 

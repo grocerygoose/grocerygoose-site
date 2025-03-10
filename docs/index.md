@@ -77,4 +77,4 @@
 
 ## Contact
 
-Need help or have questions? [Contact us](contact.md) or email [hello@usegrocerygoose.com](mailto:hello@usegrocerygoose.com). 
+Need help or have questions? [Contact us](contact.md) or email [support@usegrocerygoose.com](mailto:support@usegrocerygoose.com). 
